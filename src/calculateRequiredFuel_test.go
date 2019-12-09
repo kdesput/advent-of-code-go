@@ -9,9 +9,9 @@ func TestRequiredFuelForMass(t *testing.T) {
 	for i := 0; i < 4; i++ {
 		requiredFuel := requiredFuelForMass(arguments[i])
 		if requiredFuel != expectedValues[i] {
-			t.Errorf("calculateRequiredFuel(%v) failed, expected %v, got %v", arguments[i], expectedValues[i], requiredFuel)
+			t.Errorf("calculateRequiredFuelForMass(%v) failed, expected %v, got %v", arguments[i], expectedValues[i], requiredFuel)
 		} else {
-			t.Logf("calculateRequiredFuel(12) passed")
+			t.Logf("calculateRequiredFuelForMass(%v) passed", arguments[i])
 		}
 	}
 }
@@ -23,9 +23,9 @@ func TestRequiredFuelForModule(t *testing.T) {
 	for i := 0; i < 3; i++ {
 		requiredFuel := requiredFuelForModule(arguments[i])
 		if requiredFuel != expectedValues[i] {
-			t.Errorf("calculateRequiredFuel(%v) failed, expected %v, got %v", arguments[i], expectedValues[i], requiredFuel)
+			t.Errorf("calculateRequiredFuelForModule(%v) failed, expected %v, got %v", arguments[i], expectedValues[i], requiredFuel)
 		} else {
-			t.Logf("calculateRequiredFuel(12) passed")
+			t.Logf("calculateRequiredFuelForModule(%v) passed", arguments[i])
 		}
 	}
 }
